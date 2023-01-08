@@ -1,0 +1,80 @@
+.navbar {
+    background-color: silver;
+  }
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-collapse {
+    display: block !important;
+  }
+  .buttons-container {
+    display: flex;
+  }
+  .first-button-container {
+    padding-right: 1rem;
+    border-right: 2px solid #f2e9e9;
+  }
+  .shadow-button:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  .pop {
+    cursor: pointer;
+  }
+  .pop:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 0.2rem;
+  }
+  .card {
+    height: 31.8rem;
+  }
+  
+  /* Remove default bullets */
+  ul,
+  #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+  

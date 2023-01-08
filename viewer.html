@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  
+    <link rel="stylesheet" href="./index.css" />
+    <title>JSON VIEWER</title>
+  </head>
+  <body>
+    <div class="container-flex">
+      <nav class="navbar navbar-light col-12">
+        <div id="navbarSupportedContent" class="d-flex">
+          <ul class="navbar-nav mr-2">
+            <li class="nav-item">
+              <a
+                type="button"
+                id="btn"
+                class="btn btn-sm btn-info"
+                href="./viewer.html"
+                onclick="loadViewerPage()"
+              >
+                Viewer
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                type="button"
+                id="btn"
+                class="btn btn-sm btn-info"
+                type="button"
+                href="./index.html"
+              >
+                Text
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row d-flex">
+        <div class="col-9">
+          <div class="card" id="inputArea">
+            
+            <div id="my-treeview"">
+              <!-- <ul id="myUL">
+                <li><span class="caret">JSON{}</span>
+                  <ul class="nested" id="nested">
+                    <li>Water</li>
+                    <li>Coffee</li>
+                    <li><span class="caret">Tea</span>
+                      <ul class="nested">
+                        <li>Black Tea</li>
+                        <li>White Tea</li>
+                        <li><span class="caret">Green Tea</span>
+                          <ul class="nested">
+                            <li>Sencha</li>
+                            <li>Gyokuro</li>
+                            <li>Matcha</li>
+                            <li>Pi Lo Chun</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">name</th>
+                  <th scope="col">value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-treeview/1.2.0/bootstrap-treeview.min.js" integrity="sha512-Hyk+1XSRfagqzuSHE8M856g295mX1i5rfSV5yRugcYFlvQiE3BKgg5oFRfX45s7I8qzMYFa8gbFy9xMFbX7Lqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+    <script src="./viewer.js"></script>
+  </body>
+</html>
